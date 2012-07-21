@@ -2,7 +2,7 @@ MineSweeper
 ===========
 
 "Half Hour" Minesweeper, and then all the rest...
-...........
+___________
 
 Quick and (hopefully) not too dirty response to a programming challenge: 
 Write as much of minesweeper as you can in one half hour. Text based only 
