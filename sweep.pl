@@ -197,17 +197,17 @@ sub show {
     # print x labels first
     print "    ";
     for my $xl (0 .. $width -1) {
-        print colored (sprintf ("%-2d " ,$xl), 'bold green'); 
+        printf ("%-2d " ,$xl); 
     }
     print "\n\n";
     for (my $h = 0; $h < $hight; $h++) {
-        print colored(sprintf ("%-2d  ", $h), 'bold green');
+        printf ("%-2d  ", $h);
         for (my $w = 0; $w < $width; $w++) {
             if ($foreground[$w][$h] eq 'B') {
                 print "X  ";
             }
             else {
-                $playground[$w][$h] eq $bombIcon ? print colored ("$playground[$w][$h]", 'bold red'), "  "
+                $playground[$w][$h] eq $bombIcon ? print "$playground[$w][$h]  "
                                                  : print "$playground[$w][$h]  ";
            }
         }
