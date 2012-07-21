@@ -5,7 +5,7 @@ MineSweeper
                                                                            
 The classic Minesweeper game has shipped with windows forever. This is a 
 "just because" version for ANSI terminal. The color version will not work very well
-on widows in the "Command Prompt" and maybe not in other terminals either. You will see 
+on widows in the "Command Prompt" and maybe not in some other terminals either. You will see 
 the ANSI control sequences insted of colored text. Look for a branch called "noColor" in the 
 repo for another version without ANSI color, if you need it
                                                                            
