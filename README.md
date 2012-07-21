@@ -26,7 +26,17 @@ I would not normally write a program of this length with global variables.
 Also, there is no error checking in place at this point. I feel this is
 in the spirit of the challenge. 
                                                                           
-If it bugs me enough I may change theses problems some day.
+If it bugs me enough I may fix these problems some day. Unless you
+do it first...
+                                                                       
+&copy 2012 Frank Lyon Cox
+
+This program is free software; you can redistribute it and/or modify it
+under the same terms as Perl itself, either Perl version 5.10.1 or, at 
+your option, any later version of Perl 5 you may have available.
+
+
+
 
 
 
