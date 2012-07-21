@@ -13,7 +13,7 @@
 #
 # Change $height, $width and $bombs to make a more challenging game. 
 #
-# &copy 2012 Frank Lyon Cox
+# &copy; 2012 Frank Lyon Cox
 #
 # This program is free software; you can redistribute it and/or modify it 
 # under the same terms as Perl itself, either Perl version 5.10.1 or, at 
