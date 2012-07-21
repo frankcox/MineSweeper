@@ -4,10 +4,10 @@ MineSweeper
 ####_"Half Hour" Minesweeper, and then all the rest..._
                                                                            
 The classic Minesweeper game has shipped with windows forever. This is a 
-"just because" version for ANSI terminal. I will not work very pleasantly
-on widows in the "Command Prompt" and maybe other terminals. You will see 
-the ANSI control sequences for the colored text. Look for a branch in the 
-repo for a version without ANSI color if you need it.
+"just because" version for ANSI terminal. The color version will not work very well
+on widows in the "Command Prompt" and maybe not in other terminals either. You will see 
+the ANSI control sequences insted of colored text. Look for a branch in the 
+repo for another version without ANSI color, if you need it
                                                                            
 ####Why?
                                                                            
