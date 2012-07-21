@@ -1,7 +1,7 @@
 MineSweeper
 ===========
 
-_"Half Hour" Minesweeper, and then all the rest..._
+####_"Half Hour" Minesweeper, and then all the rest..._
 
 
 Quick and (hopefully) not too dirty response to a programming challenge: 
