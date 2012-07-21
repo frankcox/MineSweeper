@@ -13,26 +13,6 @@
 #
 # Change $height, $width and $bombs to make a more challenging game. 
 #
-# ####Why?
-#
-# This is just a quick and (hopefully) not too dirty response to a 
-# programming challenge: # Write as much of minesweeper as you can in one
-# half hour. Text based only and choose any language.
-#                                                                           
-# For speed I used Perl. In a half hour I got the bombs randomly 
-# placed in the playground and displayed on screen. I had started on the
-# number-of-nearby bombs part.
-#                                                                           
-# A few weeks later I sat down and finished it. It took another, maybe three 
-# hours. Not counting whatever thinking I did in the mean time.
-#
-# I would not normally write a program of this length with global variables. 
-# Also, there is no error checking in place at this point. I feel this is
-# in the spirit of the challenge. 
-#
-# If it bugs me enough I may change theses problems some day. Unless you
-# do it first...
-#
 # &copy 2012 Frank Lyon Cox
 #
 # This program is free software; you can redistribute it and/or modify it 
