@@ -226,7 +226,7 @@ sub parseLine {
         return [-1]; # boom
     }
     elsif ($playground[$x][$y] =~ m/\./) {
-        print "    \$playground[$x][$y] = $playground[$x][$y] so \n";
+#       print "    \$playground[$x][$y] = $playground[$x][$y] so \n";
         clearOpenSpace([$x, $y]);
     }
 
