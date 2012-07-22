@@ -25,12 +25,20 @@ number-of-nearby bombs part.
 A few weeks later I sat down and finished it. It took another, maybe three 
 hours. Not counting whatever thinking I did in the mean time.
 
-I would not normally write a program of this length with global variables.
-Also, there is no error checking in place at this point. I feel this is
-in the spirit of the challenge. 
-                                                                          
-If it bugs me enough I may fix these problems some day. Unless you
-do it first...
+####TO DO
+
+I wouldn't normally release a program that has the problems this one has. 
+I excuse myself because I can say it's in the spirit of the challenge. It 
+was finished quickly, and it's just a fun little game that seems to work fine.
+
+However, if someone were to put more work into it I'd suggest that it could 
+use some more error checking and some editing and correcting of the in-program
+comments. Beyond that, I can think of a number of ways the structure of the 
+program could be improved. 
+
+But forget the small stuff. It should be possible to use mouse clicks to
+interact with the program in the terminal, just like in the GUI game. 
+That would be great!
                                                                        
 &copy; 2012 Frank Lyon Cox
 
