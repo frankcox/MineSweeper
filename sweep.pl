@@ -29,7 +29,7 @@ use Scalar::Util qw(looks_like_number);
 $| = 1;
 
 # Change $height, $width and $bombs to make a more challenging game.
-my $hight = 5;
+my $height = 5;
 my $width = 4;
 my $bombs = 3;
 
@@ -37,6 +37,15 @@ my $bombIcon = '*';
 
 my @playground;
 my @foreground;
+
+
+
+
+if ($bombs > ($height * $width)) {
+    print "**WOAH!**\n\$bombs can't be bigger that \$height times \$width\n which is ";
+    printf "%d\n", $height * $width;
+    exit;
+}
 
 init();
 show();
@@ -67,14 +76,14 @@ while (not $done) {
 #.....................................................
 sub init {
     # init playground
-    for (my $h = 0; $h < $hight; $h++) {
+    for (my $h = 0; $h < $height; $h++) {
         for (my $w = 0; $w < $width; $w++) {
             $playground[$w][$h] = '.';
         }
     }
 
     # init foreground
-    for (my $h = 0; $h < $hight; $h++) {
+    for (my $h = 0; $h < $height; $h++) {
         for (my $w = 0; $w < $width; $w++) {
             $foreground[$w][$h] = 'B';
         }
@@ -84,7 +93,7 @@ sub init {
     my $done = 0;
     while ($done != $bombs) {
         my $place_x = int (rand($width));
-        my $place_y = int (rand($hight));
+        my $place_y = int (rand($height));
 
     #   print "try: \$playground[$place_x][$place_y] = ",$playground[$place_x][$place_y],"\n";
 
@@ -95,7 +104,7 @@ sub init {
     }
 
     # put numbers in any cell accent to one or more bombs 
-    for (my $h = 0; $h < $hight; $h++) {
+    for (my $h = 0; $h < $height; $h++) {
         for (my $w = 0; $w < $width; $w++) {
             my $n = countUm([$w, $h]);
             if ($n) {
@@ -130,7 +139,7 @@ sub countUm {
                 $try->[0] >= 0
             and $try->[1] >= 0
             and $try->[0] < $width 
-            and $try->[1] < $hight
+            and $try->[1] < $height
             and $playground[$try->[0]][$try->[1]] eq $bombIcon
            ) {
             $count++;
@@ -152,7 +161,7 @@ sub show {
     # check for a win first...
     my $win = 1;
     FOO:
-    for (my $h = 0; $h < $hight; $h++) {
+    for (my $h = 0; $h < $height; $h++) {
         for (my $w = 0; $w < $width; $w++) {
             if ($playground[$w][$h] ne $bombIcon) {
                 if ($foreground[$w][$h] eq 'B') {
@@ -167,7 +176,7 @@ sub show {
     if ($win) {
 
         # show everything...
-        for (my $h = 0; $h < $hight; $h++) {
+        for (my $h = 0; $h < $height; $h++) {
             for (my $w = 0; $w < $width; $w++) {
                 $foreground[$w][$h] = 'C';
             }
@@ -180,7 +189,7 @@ sub show {
         printf ("%-2d " ,$xl); 
     }
     print "\n\n";
-    for (my $h = 0; $h < $hight; $h++) {
+    for (my $h = 0; $h < $height; $h++) {
         printf ("%-2d  ", $h);
         for (my $w = 0; $w < $width; $w++) {
             if ($foreground[$w][$h] eq 'B') {
@@ -259,7 +268,7 @@ sub clearOpenSpace {
                     $try->[0] >= 0
                 and $try->[1] >= 0
                 and $try->[0] < $width 
-                and $try->[1] < $hight
+                and $try->[1] < $height
                ) {
                 if ($playground[$try->[0]][$try->[1]] =~ m/\./ and $foreground[$try->[0]][$try->[1]] ne 'C') {
                     $foreground[$try->[0]][$try->[1]] = 'C';
@@ -275,5 +284,4 @@ sub clearOpenSpace {
         }
     }
 }
-
 
