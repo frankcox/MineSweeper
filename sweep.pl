@@ -54,7 +54,7 @@ show();
 
 my $done = 0;
 while (not $done) {
-    print "enter row and column as two numbers: >";
+    print "enter column and row as two numbers: >";
     my $line = <STDIN>;
     my $aref = parseLine($line);
     if ($aref->[0] < 0) {
